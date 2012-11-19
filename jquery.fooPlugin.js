@@ -2,7 +2,7 @@
 
     $.fn.fooPlugin = function (customOptions) {
         var options = $.extend({}, $.fn.fooPlugin.defaultOptions, customOptions),
-        globalVar = -1;
+        scopeGlobal = -1;
 
         function _init(matchedObj) {
             // construction logic here
