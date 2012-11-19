@@ -1,1 +1,4 @@
 A template for creating a jquery plugin
+
+# Usage #
+just replace 'fooPlugin' with your plugin name
