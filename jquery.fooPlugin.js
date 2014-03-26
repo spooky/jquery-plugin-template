@@ -1,10 +1,11 @@
 ﻿(function ($) {
 
     $.fn.fooPlugin = function (customOptions) {
-        var options = $.extend({}, $.fn.fooPlugin.defaultOptions, customOptions),
+        var options = {},
         scopeGlobal = -1;
 
         function _init(matchedObj) {
+            options = $.extend($.fn.cover.defaultOptions, matchedObj.data(), customOptions);
             // construction logic here
         };
 
